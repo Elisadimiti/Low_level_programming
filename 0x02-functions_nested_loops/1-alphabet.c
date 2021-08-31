@@ -1,21 +1,17 @@
-#include "holberton.h"
+#include <stdio.h>
 /**
- * print_alphabet - printing alphabet
- * @void:void
+ * main - Entry point
  *
- * Description: prints alphabet using _putchar
- * holberton.h: created header
- * Return: none
-**/
-void print_alphabet(void)
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
 	char c;
 
-	c = 'a';
-	while (c <= 'z')
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		putchar(c);
-		c++;
+		putchar (c);
 	}
-	putchar('\n');
+	putchar ('\n');
+	return (0);
 }
