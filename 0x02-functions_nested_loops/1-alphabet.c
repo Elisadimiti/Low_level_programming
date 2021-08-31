@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
  * print_alphabet - printing alphabet
  * @void:void
@@ -17,5 +17,5 @@ void print_alphabet(void)
 		putchar(c);
 		c++;
 	}
-	_putchar('\n');
+	putchar('\n');
 }
