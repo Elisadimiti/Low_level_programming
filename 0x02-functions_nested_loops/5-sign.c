@@ -1,9 +1,9 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * print_sign - checks the sign of a number
  * @n: number to be checked
  *
- * holberton.h: created header
+ * main.h: created header
  *
  * Return: 1 if >0, 0 if 0, -1 if <0
 **/

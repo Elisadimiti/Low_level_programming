@@ -1,11 +1,10 @@
-#include <main.c>
-#include "holberton.h"
+#include "main.h"
 /**
  * print_alphabet - printing alphabet
  * @void:void
  *
  * Description: prints alphabet using _putchar
- * holberton.h: created header
+ * main.h: created header
  * Return: none
 **/
 void print_alphabet(void)

@@ -1,10 +1,10 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * print_alphabet_x10 - printing alphabet 10 tmes
  * @void:void
  *
  * Description: prints alphabet 10 times using _putchar
- * holberton.h: created header
+ * main.h: created header
  * Return: none
 **/
 void print_alphabet_x10(void)

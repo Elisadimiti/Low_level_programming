@@ -1,9 +1,9 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _islower - checks for lower case character
  * @c: number to be checked
  *
- * holberton.h: created header
+ * main.h: created header
  *
  * Return: 1 if it is lower case, 0 otherwise
 **/

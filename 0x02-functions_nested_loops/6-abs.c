@@ -1,9 +1,9 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _abs - computes absolute value
  * @n: number to be checked
  *
- * holberton.h: created header
+ * main.h: created header
  *
  * Return: value
 **/
