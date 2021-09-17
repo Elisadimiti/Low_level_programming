@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdiolib.h>
+#include <stdlib.h>
 
 /**
  * main - adds all postive numbers and prints it
