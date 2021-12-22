@@ -20,8 +20,8 @@ for (i = 0; i < ht->size; i++)
 	while (node != NULL)
 	{
 		if (comma)
-			printf(", ");
-		
+			printf(",");
+
 		printf("'%s': '%s'", node->key, node->value);
 		node = node->next;
 
