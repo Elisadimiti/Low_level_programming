@@ -5,7 +5,6 @@
 
 
 def island_perimeter(grid)
-
 count = 0
 for i in range(0, len(grid)):
     for j in rang(0, len(grid[i])):
