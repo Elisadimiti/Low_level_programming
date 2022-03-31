@@ -1,7 +1,5 @@
 #include "search_algos.h"
 
-void print_array(int *array, size_t i, size_t size);
-
 /**
  * binary_search - binary search algorithm in a string
  * @array: list of elements
@@ -9,32 +7,25 @@ void print_array(int *array, size_t i, size_t size);
  * @value: target to search
  * Return: element index on success (-1) on fail
  */
-int binary_search(int *array, size_t size, int value)
+
+void printer(int *array, int l, int r)
 {
-	size_t low = 0, high = size - 1, half = 0;
+	int i;
 
-	if (array == NULL || value == 0)
-		return (-1);
+	printf("Searching in array: ");
 
-	print_array(array, low, size);
-	while (low < high)
+	for (i = l; i <= r; i++)
 	{
-		half = (low + high) / 2;
-		if (array[half] < value)
+		if (i == r)
 		{
-			low = half + 1;
-			print_array(array, low, high + 1);
+			printf("%d\n", array[i]);
+			return;
 		}
-		else if (array[half] > value)
-		{
-			high = half - 1;
-			print_array(array, low, high + 1);
-		}
-		else
-			return (array[half]);
+
+		printf("%d, ", array[i]);
 	}
-	return (-1);
 }
+
 
 /**
  * print_array - print all elements in an array
@@ -42,15 +33,32 @@ int binary_search(int *array, size_t size, int value)
  * @i: index to init
  * @size: size of the array
  */
-void print_array(int *array, size_t i, size_t size)
+
+int binary_search(int *array, size_t size, int value)
 {
-	printf("Searching in array: ");
-	while (i < size)
+	int l, m, r;
+
+	if (array == NULL)
+		return (-1);
+
+	l = 0;
+	r = (int) size - 1;
+
+	while (l <= r)
 	{
-		if (i + 1 == size)
-			printf("%d ", array[i]);
-		else
-			printf("%d, ", array[i]);
-		i++;
-	} printf("\n");
+		m = (l + r) / 2;
+
+		printer(array, l, r);
+
+		if (array[m] < value)
+			l = m + 1;
+
+		else if (array[m] > value)
+			r = m - 1;
+
+		else if (array[m] == value)
+			return (m);
+	}
+
+	return (-1);
 }
